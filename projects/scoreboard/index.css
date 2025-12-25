@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  background-color: #1b244a;
+  font-family: "Press Start 2P";
+  font-size: 36px;
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.scoreboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.score-container {
+  background-color: #080001;
+  width: 150px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.score {
+  font-size: 90px;
+  margin: auto;
+  text-align: center;
+}
+
+.score-btns {
+  padding: 0px;
+  display: flex;
+}
