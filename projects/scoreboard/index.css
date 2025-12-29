@@ -19,11 +19,12 @@ body {
 }
 .score-container {
   background-color: #080001;
-  width: 150px;
+  width: 155px;
   height: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 26px;
   border-radius: 5px;
 }
 
@@ -31,9 +32,30 @@ body {
   font-size: 90px;
   margin: auto;
   text-align: center;
+  color: #f94f6d;
 }
 
 .score-btns {
+  background: none;
   padding: 0px;
   display: flex;
+  justify-content: space-between;
+  width: 155px;
+}
+.score-btns > button {
+  font-family: "Press Start 2P";
+  border-radius: 5px;
+  color: #9aabd8;
+  background-color: #1b244a;
+  border: 2px solid #9aabd8;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.score-btns > button:active {
+  background-color: #9aabd8;
+  color: #1b244a;
 }
