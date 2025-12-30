@@ -53,8 +53,36 @@ body {
   justify-content: center;
   align-items: center;
 }
+.score-btns > button:hover {
+  box-shadow: 0px 0px 5px #fde68a;
+}
 
 .score-btns > button:active {
   background-color: #9aabd8;
   color: #1b244a;
+  box-shadow: none;
+}
+
+#new-game {
+  border-radius: 5px;
+  color: #9aabd8;
+  background-color: #1b244a;
+  border: 2px solid #9aabd8;
+  width: 100px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+
+#new-game:hover {
+  box-shadow: 0px 0px 5px #fde68a;
+}
+
+#new-game:active {
+  background-color: #9aabd8;
+  color: #1b244a;
+  box-shadow: none;
 }
