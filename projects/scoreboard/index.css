@@ -1,7 +1,6 @@
 body {
   margin: 0;
   background-color: #1b244a;
-  font-family: "Press Start 2P";
   font-size: 36px;
   color: white;
 }
@@ -28,7 +27,8 @@ body {
   border-radius: 5px;
 }
 
-.score {
+#home-score,
+#away-score {
   font-size: 90px;
   margin: auto;
   text-align: center;
@@ -43,7 +43,6 @@ body {
   width: 155px;
 }
 .score-btns > button {
-  font-family: "Press Start 2P";
   border-radius: 5px;
   color: #9aabd8;
   background-color: #1b244a;
