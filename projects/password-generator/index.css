@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  background-color: #1f2937;
+  font-family: "Karla";
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 52px;
+}
+hr {
+  width: 100%;
+}
+.emphasis {
+  color: #4adf86;
+}
+#generate-passwords {
+  height: 45px;
+  width: 200px;
+  margin-top: 50px;
+}
+#main-call {
+  padding-top: 115px;
+  font-weight: 800px;
+  margin: 0px;
+}
+
+#subline {
+  margin: 0px;
+  margin-top: 10px;
+  color: #d5d4d8;
+  font-weight: 300;
+}
