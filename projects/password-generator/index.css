@@ -53,6 +53,29 @@ hr {
   font-weight: 800px;
   margin: 0px;
 }
+
+#password-copied-notification {
+  /* Initial state: hidden and out of sight */
+  width: 100px;
+  opacity: 0;
+  text-align: center;
+  margin: 10px auto;
+  visibility: hidden; /* Helps with screen readers/pointer events */
+  padding: 10px 20px;
+  background-color: #10b981; /* Green background for success */
+  color: white;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Apply the animation when the 'show' class is added by JS */
+  transition: opacity 0.5s ease-in-out, visibility 0.5s;
+}
+
+/* Class added by JavaScript to make the message visible */
+#password-copied-notification.show {
+  opacity: 1;
+  visibility: visible;
+}
+
 #passwords-div {
   margin-top: 40px;
   display: flex;

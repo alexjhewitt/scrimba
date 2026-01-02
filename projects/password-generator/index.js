@@ -101,7 +101,38 @@ const characters = [
 let passwordOne = document.getElementById("password-one");
 let passwordTwo = document.getElementById("password-two");
 
-passwordOne.addEventListener("click", (event) => {});
+passwordOne.addEventListener("click", (event) => {
+  let password = passwordOne.textContent;
+  copyPasswordToClipboard(password);
+});
+
+passwordTwo.addEventListener("click", (event) => {
+  let password = passwordTwo.textContent;
+  copyPasswordToClipboard(password);
+});
+
+function copyPasswordToClipboard(pwd) {
+  if (!pwd) {
+    console.log("field is empty");
+    return;
+  }
+  navigator.clipboard
+    .writeText(pwd)
+    .then(() => {
+      const messageElement = document.getElementById(
+        "password-copied-notification"
+      );
+
+      messageElement.classList.add("show");
+
+      setTimeout(() => {
+        messageElement.classList.remove("show");
+      }, 1500);
+    })
+    .catch((err) => {
+      console.error("Could not copy text: ", err);
+    });
+}
 
 function getRandomCharacter() {
   return Math.floor(Math.random() * characters.length);
