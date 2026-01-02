@@ -93,6 +93,7 @@ const characters = [
 ];
 
 // Stretch Goals:
+// Starting length = 15 chars
 // - Ability to change password length
 // - Add copy on click
 // - Toggle "symbols" and "numbers" on/off
@@ -100,11 +101,21 @@ const characters = [
 let passwordOne = document.getElementById("password-one");
 let passwordTwo = document.getElementById("password-two");
 
-passwordOne.addEventListener("click", (event) => {
-  let text = passwordOne.textContent;
-  console.log(text);
-});
+passwordOne.addEventListener("click", (event) => {});
+
+function getRandomCharacter() {
+  return Math.floor(Math.random() * characters.length);
+}
+
+function generateSinglePassword(length = 15) {
+  let password = "";
+  for (let i = 0; i < length; i++) {
+    password += characters[getRandomCharacter()];
+  }
+  return password;
+}
 
 function generatePasswords() {
-  console.log("now generating...");
+  passwordOne.textContent = generateSinglePassword();
+  passwordTwo.textContent = generateSinglePassword();
 }
